@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kantumruy Pro", sans-serif;
+  font-weight: bold;
+  background-color: #983b45;
+  color: #f3eee4;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  margin: 20px;
+  color: #f7daae;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 25px;
+}
+
+input[type=text] {
+  font-weight: bold;
+  font-family: "Kantumruy Pro", sans-serif;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: none;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 380px;
+  height: 7px;
+  border-radius: 5px;
+  background-size: 100% 100%;
+  background: rgba(255, 255, 255, 0.6) linear-gradient(#f7daae, #f7daae) no-repeat;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #f7daae;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background 0.3s ease-in-out;
+}
+
+.inputText {
+  padding-bottom: 10px;
+}
+
+.box {
+  height: 100px;
+  width: 380px;
+  background-color: #f3eee4;
+  margin-bottom: 25px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.toggle .toggle-btn {
+  background-color: #86929f;
+  border-radius: 32px;
+  width: 80px;
+  height: 45px;
+  margin: 0 10px 0 10px;
+}
+.toggle .toggle-btn .inner-circle {
+  margin: 6px;
+  background-color: #f7daae;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: all 250ms;
+}
+.toggle .toggle-btn.toggled .inner-circle {
+  transform: translateX(35px);
+  background-color: #222021;
+}
+.toggle .unselected {
+  color: #86929f;
+}
+
+/*# sourceMappingURL=index.css.map */
